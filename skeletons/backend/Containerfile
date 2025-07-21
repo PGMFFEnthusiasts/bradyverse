@@ -1,0 +1,10 @@
+FROM azul/zulu-openjdk:23-latest
+
+WORKDIR /server
+COPY . .
+
+# sanity check
+RUN java -jar sportpaper-1.8.8.jar --help
+
+EXPOSE 25565
+ENTRYPOINT [ "./start.sh" ]

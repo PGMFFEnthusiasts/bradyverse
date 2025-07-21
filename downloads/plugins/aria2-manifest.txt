@@ -1,0 +1,21 @@
+# Aria2 manifest generated on Mon Jul 21 09:16:14 PM UTC 2025
+
+https://tombrady.fireballs.me/cdn/plugins/Community.jar
+  checksum=sha-256=ba934fbc2ab760e2d2134c1787aab0e3ad84f9a8233472e0f01480eb2eaf9c44
+  out=Community.jar
+
+https://tombrady.fireballs.me/cdn/plugins/LuckPerms-Bukkit-5.5.9.jar
+  checksum=sha-256=f8bb3065ad5a1d1395f18750e496dd00237f034c5dd9cc86889a70cfd7585467
+  out=LuckPerms-Bukkit-5.5.9.jar
+
+https://tombrady.fireballs.me/cdn/plugins/spark-1.10.138-bukkit.jar
+  checksum=sha-256=7f7c2ee35612fcf3bf2604759df5ea9d531da4aa0f3af7edc390966dc01732ca
+  out=spark-1.10.138-bukkit.jar
+
+https://tombrady.fireballs.me/cdn/plugins/ViaVersion-5.4.1.jar
+  checksum=sha-256=1beae608ee7dcd89632e4e79bff18eb9744749fe3fe960f44eba5971d02b70ad
+  out=ViaVersion-5.4.1.jar
+
+https://tombrady.fireballs.me/cdn/plugins/worldedit-bukkit-6.1.7.2.jar
+  checksum=sha-256=711be37301a327aba4e347131875d0564dbfdc2f41053a12db97f0234661778b
+  out=worldedit-bukkit-6.1.7.2.jar
