@@ -4,12 +4,15 @@ DIR=$(readlink -f "$(dirname "$0")")
 readonly DIR
 cd "$DIR" || exit 1
 
-# deps: aria2c, sha256sum, docker (& buildx), git
+# deps: aria2c, sha256sum, docker (& buildx), git, curl
 
 echo "🌌 Welcome to the Bradyverse"
+TIME_START=$(date +%s)
 
 function download_by_manifest() {
   GROUP=$1
+
+  curl -Lso "downloads/$GROUP/aria2-manifest.txt" "https://tombrady.fireballs.me/cdn/$GROUP/aria2-manifest.txt"
 
   CURRENT_HASH=$(sha256sum "downloads/$GROUP/aria2-manifest.txt" | cut -d' ' -f1)
   OLD_HASH=$(cat "downloads/$GROUP/.downloaded" 2>/dev/null)
@@ -59,3 +62,6 @@ if [[ "$STANDALONE" == "1" || "$STANDALONE" == "true" ]]; then
 fi
 
 docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --platform linux/amd64 --load
+
+TIME_END=$(date +%s)
+echo "🏁 Finished building in $((TIME_END - TIME_START))s"

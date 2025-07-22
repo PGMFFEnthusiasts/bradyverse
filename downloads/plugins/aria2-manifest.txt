@@ -19,3 +19,4 @@ https://tombrady.fireballs.me/cdn/plugins/ViaVersion-5.4.1.jar
 https://tombrady.fireballs.me/cdn/plugins/worldedit-bukkit-6.1.7.2.jar
   checksum=sha-256=711be37301a327aba4e347131875d0564dbfdc2f41053a12db97f0234661778b
   out=worldedit-bukkit-6.1.7.2.jar
+

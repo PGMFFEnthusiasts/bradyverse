@@ -27,3 +27,4 @@ https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
 https://tombrady.fireballs.me/cdn/deps/tools.jar
   checksum=sha-256=d516b1ac44acfc8737d228316f7b21976f119526d990799262426505d29ce421
   out=tools.jar
+
