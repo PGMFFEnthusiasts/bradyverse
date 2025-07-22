@@ -62,7 +62,7 @@ if [[ "$STANDALONE" == "1" || "$STANDALONE" == "true" ]]; then
 fi
 
 if [[ "$BACKEND_IMAGE_TAG" != "" ]]; then
-  docker buildx build out/backend -f out/backend/Containerfile -t "$BACKEND_IMAGE_TAG" --platform linux/amd64 --push
+  docker buildx build out/backend -f out/backend/Containerfile -t "${BACKEND_IMAGE_TAG,,}" --platform linux/amd64 --push
 else
   docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --platform linux/amd64 --load
 fi
