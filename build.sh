@@ -61,7 +61,11 @@ if [[ "$STANDALONE" == "1" || "$STANDALONE" == "true" ]]; then
   sed -i '.bak' 's/bungeecord: true/bungeecord: false/g' out/backend/sportpaper.yml
 fi
 
-docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --platform linux/amd64 --load
+if [[ "$BACKEND_IMAGE_TAG" != "" ]]; then
+  docker buildx build out/backend -f out/backend/Containerfile -t "$BACKEND_IMAGE_TAG" --platform linux/amd64 --push
+else
+  docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --platform linux/amd64 --load
+fi
 
 TIME_END=$(date +%s)
 echo "🏁 Finished building in $((TIME_END - TIME_START))s"
