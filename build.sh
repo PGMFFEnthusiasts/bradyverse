@@ -71,8 +71,8 @@ cp -rT downloads/maps/out/ out/backend/
 
 if [[ "$STANDALONE" == "1" || "$STANDALONE" == "true" ]]; then
   echo "⚙️ Adding standalone options"
-  sed -i .bak 's/online-mode=false/online-mode=true/g' out/backend/server.properties
-  sed -i .bak 's/bungeecord: true/bungeecord: false/g' out/backend/sportpaper.yml
+  sed -i.bak -e 's/online-mode=false/online-mode=true/g' out/backend/server.properties
+  sed -i.bak -e 's/bungeecord: true/bungeecord: false/g' out/backend/sportpaper.yml
 fi
 
 if [[ "$BACKEND_IMAGE_TAG" != "" ]]; then
