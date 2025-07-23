@@ -4,6 +4,8 @@ DIR=$(readlink -f "$(dirname "$0")")
 readonly DIR
 cd "$DIR" || exit 1
 
+MODE=$1
+
 # deps: aria2c, sha256sum, docker (& buildx), git, curl
 
 echo "🌌 Welcome to the Bradyverse"
@@ -40,6 +42,10 @@ if [ ! -d "./downloads/maps/out/tom-brady/" ]; then
 else
   echo "🔄 Updating pre-cloned maps"
   git -C downloads/maps/out/tom-brady pull
+fi
+
+if [[ "$MODE" == "update" ]]; then
+  exit 0
 fi
 
 echo "🛠️ Building backend"

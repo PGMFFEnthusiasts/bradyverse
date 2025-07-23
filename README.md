@@ -1,5 +1,11 @@
 # bradyverse
 
+## run your own local brady
+
+```sh
+docker run --rm -it -p 25565:25565 ghcr.io/pgmffenthusiasts/bradyverse-backend:standalone
+```
+
 ## building details
 
 simply use `build.sh` minding the dependencies listed in there. it will load a docker image tagged `bradyverse-backend:latest`.
@@ -16,6 +22,8 @@ in the future (maybe).
 # for updating discord stuff (optional)
 BRADY_BOT_TOKEN=
 BRADY_BOT_BILLBOARD_CHANNEL=
+# this be a NATS server for discord & status push
+BRADY_NATS=
 
 # not optional
 BRADY_SERVER=primary

@@ -1,8 +1,12 @@
-# Aria2 manifest generated on Mon Jul 21 10:56:15 PM UTC 2025
+# Aria2 manifest generated on Wed Jul 23 03:02:57 UTC 2025
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
-  checksum=sha-256=5f6d5c7176a4022825f7901a0fa6212a95622c2943ca6ef43859520cb6c48795
+  checksum=sha-256=59d2769c8e5b184c9bcb4b7f73ee5e98f849a680eebf7237d1b0f0728c98b669
   out=bot.jar
+
+https://tombrady.fireballs.me/cdn/deps/broxy.jar
+  checksum=sha-256=e999f7357d445b53f3fe5b5149ca88393dd24fb8ff13a3181bd6d163c0e3890f
+  out=broxy.jar
 
 https://tombrady.fireballs.me/cdn/deps/core.jar
   checksum=sha-256=e0f7c89f98b02f2a0abc035b48a9b9ae0f7a1941dab99018a2891e7433544e0d
