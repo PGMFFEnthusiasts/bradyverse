@@ -73,12 +73,13 @@ if [[ "$STANDALONE" == "1" || "$STANDALONE" == "true" ]]; then
   echo "⚙️ Adding standalone options"
   sed -i.bak -e 's/online-mode=false/online-mode=true/g' out/backend/server.properties
   sed -i.bak -e 's/bungeecord: true/bungeecord: false/g' out/backend/sportpaper.yml
+  rm out/backend/*.bak
 fi
 
-if [[ "$BACKEND_IMAGE_TAG" != "" ]]; then
-  docker buildx build out/backend -f out/backend/Containerfile -t "${BACKEND_IMAGE_TAG,,}" --platform linux/amd64 --push
+if [[ "$PUSH_BACKEND_IMAGE_TAG" != "" ]]; then
+  docker buildx build out/backend -f out/backend/Containerfile -t "${PUSH_BACKEND_IMAGE_TAG,,}" --platform "linux/amd64,linux/arm64" --push
 else
-  docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --platform linux/amd64 --load
+  docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --load
 fi
 
 TIME_END=$(date +%s)
