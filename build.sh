@@ -11,6 +11,13 @@ MODE=$1
 echo "🌌 Welcome to the Bradyverse"
 TIME_START=$(date +%s)
 
+if [ -f .env ]; then
+  echo "✅ .env loaded"
+  set -a
+  source .env
+  set +a
+fi
+
 function download_by_manifest() {
   GROUP=$1
 
@@ -57,6 +64,7 @@ mkdir out
 cp -r skeletons/backend/ out/
 cp -rT downloads/plugins/out/ out/backend/plugins/
 cp -rT downloads/deps/out/ out/backend/plugins/
+rm out/backend/plugins/broxy.jar
 cp -rT skeletons/private/ out/backend/ 2>/dev/null
 mv out/backend/plugins/sportpaper-1.8.8.jar out/backend/
 cp -rT downloads/maps/out/ out/backend/

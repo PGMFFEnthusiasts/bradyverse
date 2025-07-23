@@ -1,10 +1,12 @@
 FROM azul/zulu-openjdk:23-latest
 
-WORKDIR /server
+WORKDIR /template
 COPY . .
 
 # sanity check
-RUN java -jar sportpaper-1.8.8.jar --help
+RUN java -jar sportpaper-1.8.8.jar -v
+
+WORKDIR /server
 
 EXPOSE 25565
-ENTRYPOINT [ "./start.sh" ]
+ENTRYPOINT [ "/template/bootstrap.sh" ]

@@ -6,6 +6,15 @@
 docker run --rm -it -p 25565:25565 ghcr.io/pgmffenthusiasts/bradyverse-backend:standalone
 ```
 
+if you want to persist the data, you should give something like this a try:
+
+```sh
+docker run --rm -it -p 25565:25565 -v ./data:/server ghcr.io/pgmffenthusiasts/bradyverse-backend:standalone
+```
+
+> [!CAUTION]
+> Don't delete `start.sh` in the data folder, as this will cause the server to be re-copied from the template.
+
 ## building details
 
 simply use `build.sh` minding the dependencies listed in there. it will load a docker image tagged `bradyverse-backend:latest`.

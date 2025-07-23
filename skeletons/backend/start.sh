@@ -5,7 +5,6 @@ readonly DIR
 cd "$DIR" || exit 1
 
 if [ -f .env ]; then
-  echo "✅ .env loaded"
   set -a
   source .env
   set +a
