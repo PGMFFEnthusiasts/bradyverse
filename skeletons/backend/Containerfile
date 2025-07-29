@@ -2,6 +2,7 @@ FROM azul/zulu-openjdk:23-latest
 
 WORKDIR /template
 COPY . .
+COPY --from=hairyhenderson/gomplate:stable /gomplate /bin/gomplate
 
 # sanity check
 RUN java -jar sportpaper-1.8.8.jar -v

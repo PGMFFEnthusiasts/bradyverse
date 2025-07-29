@@ -1,0 +1,8 @@
+cps-tags: true
+{{ $database_uri := (getenv "DATABASE_URI" "") }}
+{{ if gt (len $database_uri) 0 }}
+database:
+  path: {{ $database_uri }}
+  username: {{ getenv "DATABASE_USER" "postgres" }}
+  password: {{ getenv "DATABASE_PASS" "secret" }}
+{{ end }}
