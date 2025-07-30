@@ -69,13 +69,6 @@ cp -rT skeletons/private/ out/backend/ 2>/dev/null
 mv out/backend/plugins/sportpaper-1.8.8.jar out/backend/
 cp -rT downloads/maps/out/ out/backend/
 
-if [[ "$STANDALONE" == "1" || "$STANDALONE" == "true" ]]; then
-  echo "⚙️ Adding standalone options"
-  sed -i.bak -e 's/online-mode=false/online-mode=true/g' out/backend/server.properties
-  sed -i.bak -e 's/bungeecord: true/bungeecord: false/g' out/backend/sportpaper.yml
-  rm out/backend/*.bak
-fi
-
 if [[ "$PUSH_BACKEND_IMAGE_TAG" != "" ]]; then
   docker buildx build out/backend -f out/backend/Containerfile -t "${PUSH_BACKEND_IMAGE_TAG,,}" --platform "linux/amd64,linux/arm64" --push
 else

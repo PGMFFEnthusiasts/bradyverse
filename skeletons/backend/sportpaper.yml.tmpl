@@ -43,7 +43,7 @@ spigot:
     timeout-time: 60
     restart-on-crash: true
     restart-script: ./start.sh
-    bungeecord: true
+    bungeecord: {{getenv "STANDALONE" "false"}}
     late-bind: false
     sample-count: 12
     fetch-skulls: true

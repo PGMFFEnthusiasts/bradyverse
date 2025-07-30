@@ -3,13 +3,13 @@
 ## run your own local brady
 
 ```sh
-docker run --rm -it -p 25565:25565 ghcr.io/pgmffenthusiasts/bradyverse-backend:standalone
+docker run --rm -it -p 25565:25565 ghcr.io/pgmffenthusiasts/bradyverse-backend:latest
 ```
 
 if you want to persist the data, you should give something like this a try:
 
 ```sh
-docker run --rm -it -p 25565:25565 -v ./data:/server ghcr.io/pgmffenthusiasts/bradyverse-backend:standalone
+docker run --rm -it -p 25565:25565 -v ./data:/server ghcr.io/pgmffenthusiasts/bradyverse-backend:latest
 ```
 
 > [!CAUTION]
@@ -19,23 +19,28 @@ docker run --rm -it -p 25565:25565 -v ./data:/server ghcr.io/pgmffenthusiasts/br
 
 simply use `build.sh` minding the dependencies listed in there. it will load a docker image tagged `bradyverse-backend:latest`.
 
-if you set the environment variable `STANDALONE=true` then it will not enable any bungeecord/velocity configuration so you can
-play it without using a proxy.
-
 ## running details
 
 you gotta use environment variables, for the most part. the proxy isn't includeed in this repository, but i'll write about it
 in the future (maybe).
 
 ```env
+# standalone means it does NOT need bungeecord/velocity to connect
+STANDALONE=true
+
+# not optional
+BRADY_SERVER=primary
+
+# this is for the share plugin
+DATABASE_URI=127.0.0.1:5432/stats
+DATABASE_USER=postgres
+DATABASE_PASS=secret
+
 # for updating discord stuff (optional)
 BRADY_BOT_TOKEN=
 BRADY_BOT_BILLBOARD_CHANNEL=
 # this be a NATS server for discord & status push
 BRADY_NATS=
-
-# not optional
-BRADY_SERVER=primary
 
 # if using the metro (optional)
 METRONOME_WEBHOOK=
