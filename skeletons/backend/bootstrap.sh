@@ -14,17 +14,18 @@ process_template() {
     if gomplate -f "$input_file" | sed -r '/^\s*$/d' > "$output_file"; then
         # todo: remove this branch
         # rm -f "$input_file"
-        echo "rendered $input_file"
+        echo "✨ Rendered $input_file"
     else
         # echo "gomplate rendering failed. Input file not removed."
-        echo "gomplate rendering failed."
+        echo "‼️ gomplate rendering failed."
         return 1
     fi
 }
 
+echo "🌌 Welcome to the Bradyverse"
 
 if [ ! -f "start.sh" ]; then
-  echo "🌌 Welcome to the Bradyverse"
+  echo "‼️ This is the first boot"
   cp -rT /template /server
   rm /server/bootstrap.sh
 fi
@@ -34,10 +35,17 @@ if [ -f vars.env ]; then
     rm -f vars.env
 fi
 
-ln -s /server/tom-brady/includes/ plugins/PGM/
+ln -s /server/tom-brady/includes/ plugins/PGM/ 2>/dev/null
 
 process_template "server.properties.tmpl" "server.properties"
 process_template "sportpaper.yml.tmpl" "sportpaper.yml"
 process_template "plugins/Share/config.yml.tmpl" "plugins/Share/config.yml"
+
+if [ -d "/merge" ]; then
+  echo "🦄 Merging!"
+  cp -rf /merge/* /server/
+fi
+
+echo "🚀 Starting server..."
 
 ./start.sh

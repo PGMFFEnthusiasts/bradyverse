@@ -58,3 +58,8 @@ docker run --rm -it -p 25565:25565 bradyverse-backend:latest
 
 you can create a `private` skeleton in the `skeletons` directory and the build will merge your private into the final build.
 check the `out` directory to verify the correctness of your actions.
+
+there is also something i'm dubbing the "latemerge" method (and only because i don't really wanna build private images)
+where if you mount a folder to `/merge` it'll merge that into the server directory every start AFTER TEMPLATING.
+
+have fun with that ig!
