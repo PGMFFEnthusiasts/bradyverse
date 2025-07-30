@@ -1,4 +1,4 @@
-upload-paste: true
+upload-paste: {{ if gt (len (getenv "DATABASE_URI" "")) 0 }}false{{ else }}true{{ end }}
 {{ $database_uri := (getenv "DATABASE_URI" "") }}
 {{ if gt (len $database_uri) 0 }}
 database:

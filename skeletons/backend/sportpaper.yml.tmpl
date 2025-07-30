@@ -38,12 +38,12 @@ spigot:
     filter-creative-items: true
     user-cache-size: 1000
     int-cache-limit: 1024
-    moved-wrongly-threshold: 0.0625
+    moved-wrongly-threshold: 1.0625
     moved-too-quickly-threshold: 100.0
     timeout-time: 60
     restart-on-crash: true
     restart-script: ./start.sh
-    bungeecord: {{getenv "STANDALONE" "true"}}
+    bungeecord: {{ if eq (getenv "STANDALONE" "") "true" }}false{{ else }}true{{ end }}
     late-bind: false
     sample-count: 12
     fetch-skulls: true
