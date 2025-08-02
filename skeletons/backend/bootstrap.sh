@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ -f .env ]; then
   set -a
@@ -41,9 +41,10 @@ process_template "server.properties.tmpl" "server.properties"
 process_template "sportpaper.yml.tmpl" "sportpaper.yml"
 process_template "plugins/Share/config.yml.tmpl" "plugins/Share/config.yml"
 
-if [ -d "/merge" ]; then
+if [ -d "/merge" ] && [ "$(ls -A /merge)" ]; then
   echo "🦄 Merging!"
-  cp -rf /merge/* /server/
+  cp -rvf /merge/* /server/
+  echo "🦄 Merge complete."
 fi
 
 echo "🚀 Starting server..."
