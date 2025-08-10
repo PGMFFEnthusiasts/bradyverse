@@ -40,6 +40,7 @@ ln -s /server/tom-brady/includes/ plugins/PGM/ 2>/dev/null
 process_template "server.properties.tmpl" "server.properties"
 process_template "sportpaper.yml.tmpl" "sportpaper.yml"
 process_template "plugins/Share/config.yml.tmpl" "plugins/Share/config.yml"
+process_template "plugins/PGM/config.yml.tmpl" "plugins/PGM/config.yml"
 
 if [ -d "/merge" ] && [ "$(ls -A /merge)" ]; then
   echo "🦄 Merging!"

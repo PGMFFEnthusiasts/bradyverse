@@ -19,6 +19,14 @@ map:
   repositories:
     - uri: "https://github.com/PGMFFEnthusiasts/maps"
       path: "tom-brady"
+{{- $amr := getenv "ADDITIONAL_MAP_REPOSITORIES" "" -}}
+{{- range (strings.Split "," $amr) -}}
+  {{- if gt (len .) 0 -}}
+  {{- $parts := strings.Split "|" . }}
+    - uri: {{ index $parts 1 | quote }}
+      path: {{ index $parts 0 | quote }}
+  {{- end -}}
+{{- end }}
 
     # List of git repositories to load maps.
     #
