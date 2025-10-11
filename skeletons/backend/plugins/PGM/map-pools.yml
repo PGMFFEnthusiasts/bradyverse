@@ -88,7 +88,8 @@ pools:
     # Uses map name given in map.xml, do not use folder name.
     # Names are case-sensitive.
     maps:
-      - Brady Perfect
-      - "Tom Brady: Low Battery"
+      - "Brady Perfect"
       - "Tom Brady: MVP Edition"
-      - Shingeki no Brady
+      - "Experiment 12"
+      - "Trip to Cancun"
+      - "Tron Brady"
