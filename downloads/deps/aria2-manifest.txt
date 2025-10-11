@@ -1,19 +1,19 @@
-# Aria2 manifest generated on Sat Oct 11 05:59:01 UTC 2025
+# Aria2 manifest generated on Sat Oct 11 06:17:22 UTC 2025
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
-  checksum=sha-256=d6a451ae37d82bb9ef8fde928186d5a379b5053dbb408923e5631b647ca1cf58
+  checksum=sha-256=f149759391a145d09134114b591537a7dfadcb370468af82922b62d63fdf45a3
   out=bot.jar
 
 https://tombrady.fireballs.me/cdn/deps/broxy.jar
-  checksum=sha-256=abce9dd0cabe22a7be145a8346da62d5b5190c30d570921fce024e5322a4ca65
+  checksum=sha-256=e1fb22805e2296ba2506d4f4d3f7fc119121fa3712d15f1e241f1b340c414f7a
   out=broxy.jar
 
 https://tombrady.fireballs.me/cdn/deps/core.jar
-  checksum=sha-256=4a277fe50a02670efd72269a56a430b81a8261ef9d53bfbda1184feff0af6b58
+  checksum=sha-256=58c8fad04eec8776bacabb41d5dde8b8c44210d007fc29bfd6275bc3fa938ed2
   out=core.jar
 
 https://tombrady.fireballs.me/cdn/deps/cps.jar
-  checksum=sha-256=d52d2769f689a34b3ed5453ed64659564a78075458475351997abdb589776de9
+  checksum=sha-256=076bb00ca957fe00afaf9edb59a125217b2379d37c0573c0021c871121a1755c
   out=cps.jar
 
 https://tombrady.fireballs.me/cdn/deps/deps.jar
