@@ -1,4 +1,4 @@
-# Aria2 manifest generated on Thu Nov  6 06:04:19 AM UTC 2025
+# Aria2 manifest generated on Thu Nov  6 06:07:54 AM UTC 2025
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
   checksum=sha-256=2a96f2066ff4b857c561c330ecf888fb8c32572ee321b2e1e581e1160d3d4b4c
@@ -33,6 +33,6 @@ https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
   out=sportpaper-1.8.8.jar
 
 https://tombrady.fireballs.me/cdn/deps/tools.jar
-  checksum=sha-256=d5487d0eb91fa6909e2ab2ae7f66e92480241402d0479e91887138e4b1d88b37
+  checksum=sha-256=2b6f09afc7cbff06519d1181e08a845436e75c6418c891e222db34f2754ce9d9
   out=tools.jar
 
