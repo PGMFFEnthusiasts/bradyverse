@@ -1,4 +1,4 @@
-# Aria2 manifest generated on Fri Oct 31 05:01:33 AM UTC 2025
+# Aria2 manifest generated on Thu Nov  6 06:04:19 AM UTC 2025
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
   checksum=sha-256=2a96f2066ff4b857c561c330ecf888fb8c32572ee321b2e1e581e1160d3d4b4c

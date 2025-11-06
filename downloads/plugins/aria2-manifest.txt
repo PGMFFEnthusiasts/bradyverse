@@ -1,7 +1,7 @@
-# Aria2 manifest generated on Tue Jul 29 11:05:41 PM UTC 2025
+# Aria2 manifest generated on Thu Nov  6 06:04:32 AM UTC 2025
 
 https://tombrady.fireballs.me/cdn/plugins/Community.jar
-  checksum=sha-256=ba934fbc2ab760e2d2134c1787aab0e3ad84f9a8233472e0f01480eb2eaf9c44
+  checksum=sha-256=fb29adf40f256382fac067c67e09fa52dfef535e3cd4fe3fc6d035d84f7c0759
   out=Community.jar
 
 https://tombrady.fireballs.me/cdn/plugins/LuckPerms-Bukkit-5.5.9.jar
