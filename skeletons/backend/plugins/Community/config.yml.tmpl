@@ -69,7 +69,7 @@ moderation:
   kick:
     enabled: true
     public: true
-    match-ban: "10m" # Bans player from playing for given time. Set to -1 to disable (PGM)
+    match-ban: {{getenv "MATCH_BAN_DURATION" "\"-1\""}} # Bans player from playing for given time. Set to -1 to disable (PGM)
   ban:
     evasion-expires: 30 # Minutes
     enabled: true
