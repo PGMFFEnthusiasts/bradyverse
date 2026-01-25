@@ -44,7 +44,7 @@ spigot:
     restart-on-crash: true
     restart-script: ./start.sh
     bungeecord: {{ if eq (getenv "STANDALONE" "") "true" }}false{{ else }}true{{ end }}
-    late-bind: false
+    late-bind: true
     sample-count: 12
     fetch-skulls: true
     netty-threads: 4
