@@ -1,23 +1,23 @@
-# Aria2 manifest generated on Tue Jan  6 09:49:06 PM UTC 2026
+# Aria2 manifest generated on Wed Jan 28 05:15:04 AM UTC 2026
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
-  checksum=sha-256=2a96f2066ff4b857c561c330ecf888fb8c32572ee321b2e1e581e1160d3d4b4c
+  checksum=sha-256=45ea0b3aabd727251fbf9400df2e021e1d3e7715b7291d7bd15acf308a532c31
   out=bot.jar
 
 https://tombrady.fireballs.me/cdn/deps/broxy.jar
-  checksum=sha-256=3d08f9927f4b212299904ddb94303ee156e8f21c9bed4aaa0ff5d104b383d3bd
+  checksum=sha-256=c4e2bca1107a41742b69422213143da1cec3ccfe952eac74082b915ee044b798
   out=broxy.jar
 
 https://tombrady.fireballs.me/cdn/deps/core.jar
-  checksum=sha-256=b17c05684db2e37a1967f267476a34da0e7161de9fe5a0c07f9009b836d91bc5
+  checksum=sha-256=974e720638e0075a15bbf387d1c6c74e9fda6263b4e8eaa7dfa4fe89f600c7be
   out=core.jar
 
 https://tombrady.fireballs.me/cdn/deps/cps.jar
-  checksum=sha-256=27bd31852d7d70d0530cf749fbb475d8960964109d90c2a32b0f7ba50905f98c
+  checksum=sha-256=5bf315a40f1e60e9cc9d7bb512d5d4558b09854bbf151eb317659df693762ec2
   out=cps.jar
 
 https://tombrady.fireballs.me/cdn/deps/deps.jar
-  checksum=sha-256=4f87011ba6cceb902d325e5d8b82072e812e3c90d876866738709818938fc6f4
+  checksum=sha-256=8a4b94ad13a916dc172ff287275ad034124154dee902f180a43ef68f05c1db6e
   out=deps.jar
 
 https://tombrady.fireballs.me/cdn/deps/PGM.jar
@@ -25,7 +25,7 @@ https://tombrady.fireballs.me/cdn/deps/PGM.jar
   out=PGM.jar
 
 https://tombrady.fireballs.me/cdn/deps/share.jar
-  checksum=sha-256=f628d5873dfe260f3f9d581f18e8b92e1666c07c5b7bf126a1b4eba5d43bb6c3
+  checksum=sha-256=4e99054a23c657c42b130bac9376b076266625e69da474b3e627b942e2b0a0b6
   out=share.jar
 
 https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
@@ -33,6 +33,6 @@ https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
   out=sportpaper-1.8.8.jar
 
 https://tombrady.fireballs.me/cdn/deps/tools.jar
-  checksum=sha-256=2b6f09afc7cbff06519d1181e08a845436e75c6418c891e222db34f2754ce9d9
+  checksum=sha-256=e044e251adda001f169923a13395545e52d0a4a150e73cdd496ee65bc6345495
   out=tools.jar
 
