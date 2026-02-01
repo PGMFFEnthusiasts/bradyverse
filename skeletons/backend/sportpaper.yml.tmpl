@@ -7,7 +7,7 @@ bukkit:
   ticks-per:
     animal-spawns: 400
     monster-spawns: 1
-    autosave: 6000
+    autosave: 999999
   spawn-limits:
     monsters: 70
     animals: 15
@@ -33,7 +33,7 @@ bukkit:
 spigot:
   settings:
     debug: false
-    save-user-cache-on-stop-only: false
+    save-user-cache-on-stop-only: true
     player-shuffle: 1
     filter-creative-items: true
     user-cache-size: 1000
@@ -56,8 +56,8 @@ spigot:
       attackDamage:
         max: 2048.0
   timings:
-    enabled: true
-    verbose: true
+    enabled: false
+    verbose: false
     server-name-privacy: false
     hidden-config-entries:
     - database
@@ -139,7 +139,7 @@ spigot:
       animals: 48
       monsters: 48
       misc: 32
-      other: 64
+      other: 128
     random-light-updates: false
     mob-spawn-range: 4
     nerf-spawner-mobs: false
@@ -163,19 +163,19 @@ spigot:
     hanging-tick-frequency: 100
     zombie-aggressive-towards-villager: true
     chunks-per-tick: 650
-    clear-tick-list: false
+    clear-tick-list: true
 paper:
   settings:
     player-auto-save-rate: -1
     max-player-auto-save-per-tick: -1
     critical-hit-multiplier: 1.5
     include-randomness-in-arrow-trajectory: false
-    include-randomness-in-arrow-damage: true
+    include-randomness-in-arrow-damage: false
     baby-zombie-movement-speed: 0.5
     limit-player-interactions: true
     region-file-cache-size: 256
     save-empty-scoreboard-teams: false
-    save-player-data: true
+    save-player-data: false
     tick-empty-worlds: true
     require-all-plugins: false
     check-line-of-sight: false
@@ -236,7 +236,7 @@ paper:
     player-blocking-damage-multiplier: 0.5
     optimize-explosions: false
     mob-spawner-tick-rate: 1
-    cache-chunk-maps: false
+    cache-chunk-maps: true
     tnt-explosion-volume: 4.0
     use-chunk-inhabited-timer: true
     remove-corrupt-tile-entities: false
