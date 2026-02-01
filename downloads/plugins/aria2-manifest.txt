@@ -1,4 +1,4 @@
-# Aria2 manifest generated on Sat Jan 31 11:33:09 PM UTC 2026
+# Aria2 manifest generated on Sun Feb  1 12:04:31 AM UTC 2026
 
 https://tombrady.fireballs.me/cdn/plugins/Community.jar
   checksum=sha-256=fb29adf40f256382fac067c67e09fa52dfef535e3cd4fe3fc6d035d84f7c0759
@@ -12,17 +12,17 @@ https://tombrady.fireballs.me/cdn/plugins/spark-1.10.138-bukkit.jar
   checksum=sha-256=7f7c2ee35612fcf3bf2604759df5ea9d531da4aa0f3af7edc390966dc01732ca
   out=spark-1.10.138-bukkit.jar
 
-https://tombrady.fireballs.me/cdn/plugins/ViaBackwards-5.4.2.jar
-  checksum=sha-256=5c7d9e7e43e3c14913109a224281d655498d12da87d57972f5db6a17fce5993a
-  out=ViaBackwards-5.4.2.jar
+https://tombrady.fireballs.me/cdn/plugins/ViaBackwards-5.7.1.jar
+  checksum=sha-256=c2c3aab6d8ac9c132c2f3a18573602a0214af159dfc2981cb4c0d26b1f91b0c8
+  out=ViaBackwards-5.7.1.jar
 
-https://tombrady.fireballs.me/cdn/plugins/ViaRewind-4.0.9.jar
-  checksum=sha-256=b3982129f2f4c27ccd38067e60b478695f279147e5e8ed817a7070169db4ceef
-  out=ViaRewind-4.0.9.jar
+https://tombrady.fireballs.me/cdn/plugins/ViaRewind-4.0.14.jar
+  checksum=sha-256=b0a9a21c022605b5adbd235c3727194dfd101ba4b90934ed51a988ab7db6c0d1
+  out=ViaRewind-4.0.14.jar
 
-https://tombrady.fireballs.me/cdn/plugins/ViaVersion-5.7.2-SNAPSHOT.jar
-  checksum=sha-256=bd44a80862342d8f2c4248f7fb47c2d559b004dc658b68cb90e65cc5698def00
-  out=ViaVersion-5.7.2-SNAPSHOT.jar
+https://tombrady.fireballs.me/cdn/plugins/ViaVersion-5.7.1.jar
+  checksum=sha-256=0cd2dc443c75b3e4226f029d8b020a3776168da5563239cc96f1acd1ee7ea95a
+  out=ViaVersion-5.7.1.jar
 
 https://tombrady.fireballs.me/cdn/plugins/worldedit-bukkit-6.1.7.2.jar
   checksum=sha-256=711be37301a327aba4e347131875d0564dbfdc2f41053a12db97f0234661778b
