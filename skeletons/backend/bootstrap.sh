@@ -49,6 +49,14 @@ if [ -d "/merge" ] && [ "$(ls -A /merge)" ]; then
   echo "🦄 Merge complete."
 fi
 
+if [ "$1" == "dump" ]; then
+  echo "🌌 Dumping server files..."
+  cp -rT /template /server
+  rm -f /server/bootstrap.sh /server/Containerfile
+  echo "✅ Dump complete. Exiting."
+  exit 0
+fi
+
 echo "🚀 Starting server..."
 
 ./start.sh

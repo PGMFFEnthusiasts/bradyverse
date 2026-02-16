@@ -15,13 +15,23 @@ docker run --rm -it -p 25565:25565 -v ./data:/server ghcr.io/pgmffenthusiasts/br
 > [!CAUTION]
 > Don't delete `start.sh` in the data folder, as this will cause the server to be re-copied from the template.
 
+## dump mode
+
+to dump all server files to a mounted volume without starting the server:
+
+```sh
+docker run --rm -v ./data:/server ghcr.io/pgmffenthusiasts/bradyverse-backend:latest dump
+```
+
+this is useful for inspecting or manually modifying the server files.
+
 ## building details
 
 simply use `build.sh` minding the dependencies listed in there. it will load a docker image tagged `bradyverse-backend:latest`.
 
 ## running details
 
-you gotta use environment variables, for the most part. the proxy isn't includeed in this repository, but i'll write about it
+you gotta use environment variables, for the most part. the proxy isn't included in this repository, but i'll write about it
 in the future (maybe).
 
 ```env
