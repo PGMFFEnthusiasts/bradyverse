@@ -35,7 +35,12 @@ if [ -f vars.env ]; then
     rm -f vars.env
 fi
 
-ln -s /server/tom-brady/includes/ plugins/PGM/ 2>/dev/null
+
+if [ "$1" == "dump" ]; then
+  export STANDALONE=true
+else
+  ln -s /server/tom-brady/includes/ plugins/PGM/ 2>/dev/null
+fi
 
 process_template "server.properties.tmpl" "server.properties"
 process_template "sportpaper.yml.tmpl" "sportpaper.yml"
@@ -52,7 +57,9 @@ fi
 if [ "$1" == "dump" ]; then
   echo "🌌 Dumping server files..."
   cp -rT /template /server
+  cp -r /server/tom-brady/includes plugins/PGM/
   rm -f /server/bootstrap.sh /server/Containerfile
+  echo "BRADY_SERVER=1" >> /server/.env
   echo "✅ Dump complete. Exiting."
   exit 0
 fi
