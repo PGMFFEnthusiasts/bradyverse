@@ -1,27 +1,27 @@
-# Aria2 manifest generated on Thu Feb 19 04:32:28 PM UTC 2026
+# Aria2 manifest generated on Tue Feb 24 05:41:55 AM UTC 2026
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
-  checksum=sha-256=e261eb2088e6fd6d549b6cbf77df8f0553c37bf9c93047c773614074f63ce924
+  checksum=sha-256=8b5dce7efda00d64bfcaf26f4ab4d1e4f4c5fffc57e2bd6d09f964f0e23faa1c
   out=bot.jar
 
 https://tombrady.fireballs.me/cdn/deps/broxy.jar
-  checksum=sha-256=ed9bb1af24ac3395509944f06fc1b344300a5772a8877413d618447fa33667b0
+  checksum=sha-256=41c5ebd3f18442450b6097c47c43c59d8dc7df74e8b6678b6eaaadbe065b8a00
   out=broxy.jar
 
 https://tombrady.fireballs.me/cdn/deps/core.jar
-  checksum=sha-256=b8651c46fd3f2feb190a6460774df79b46238bb818f412e25863ca9402d6c86e
+  checksum=sha-256=375e9933402b99dd3e719bbd8ad840fb51e4ef2483da90bc37cc68d637182c23
   out=core.jar
 
 https://tombrady.fireballs.me/cdn/deps/core-pgm.jar
-  checksum=sha-256=6263c6bb0f50811b30c385adfb8931137722aa7a333ddfb5273ec048f7d251c6
+  checksum=sha-256=fe9a57a3fc1d4e9511fb12fec5d7c98d34c2da556cafe96df0ad18e1436757bb
   out=core-pgm.jar
 
 https://tombrady.fireballs.me/cdn/deps/cps.jar
-  checksum=sha-256=eb639a3b899e8562a2fd81322afbc9b3efd2d468983a9b4ea829efe9a8117941
+  checksum=sha-256=5a4c3941139aa872fe26f256cca150d30b02518e7ee9ab46aff8886de5c73672
   out=cps.jar
 
 https://tombrady.fireballs.me/cdn/deps/deps.jar
-  checksum=sha-256=78748c0c62549646bb6b6eb2ea285e952018ac242d474c8c252f5298dd4eb425
+  checksum=sha-256=3898fd549a0db8deaf36bddcc7101e86e0f390e820e01975f50521dafb3feaa7
   out=deps.jar
 
 https://tombrady.fireballs.me/cdn/deps/PGM.jar
@@ -29,14 +29,14 @@ https://tombrady.fireballs.me/cdn/deps/PGM.jar
   out=PGM.jar
 
 https://tombrady.fireballs.me/cdn/deps/share.jar
-  checksum=sha-256=af376914ce1b3f10a05b42d27dca34d7e1fbbf1a2c805da58a79e33fa98333f2
+  checksum=sha-256=560741ed25600945fd3916afa570457672cee083d3f77a1082265b058c10bc1f
   out=share.jar
 
 https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
-  checksum=sha-256=f77fd80b96584188ff9c6095aa5a0507e479594a2c0042aba0a73453c94672b7
+  checksum=sha-256=20ec447a2de40d756496ba6340c3c1e2d351dcf43967c7be689035a802cb9d56
   out=sportpaper-1.8.8.jar
 
 https://tombrady.fireballs.me/cdn/deps/tools.jar
-  checksum=sha-256=ccdb2f3141e6310d80e8c9b5825fcca521762877e55bcc6bc5cfce7f77ee9e76
+  checksum=sha-256=e0de3a3ae269c1667abedc53dc21b76c91a2bffddc6c8c58889d6168583e47c7
   out=tools.jar
 
