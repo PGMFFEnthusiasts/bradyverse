@@ -35,6 +35,9 @@ you gotta use environment variables, for the most part. the proxy isn't included
 in the future (maybe).
 
 ```env
+# you must agree to https://account.mojang.com/documents/minecraft_eula
+MOJANG_EULA_AGREEMENT=true
+
 # standalone means it does NOT need bungeecord/velocity to connect
 STANDALONE=true
 
@@ -49,8 +52,8 @@ DATABASE_PASS=secret
 # for updating discord stuff (optional)
 BRADY_BOT_TOKEN=
 BRADY_BOT_BILLBOARD_CHANNEL=
-# this be a NATS server for discord & status push
-BRADY_NATS=
+# this be a VALKEY server for discord & status push
+BRADY_VALKEY=
 
 # if using the metro (optional)
 METRONOME_WEBHOOK=
