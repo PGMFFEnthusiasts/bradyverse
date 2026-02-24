@@ -249,7 +249,7 @@ groups:
 #  "mysql://localhost/mydatabase?user=myuser&password=mypassword"
 #
 # Please do *not* edit this option unless you know what you're doing.
-database-uri: ""
+database-uri: "{{getenv "PGM_DB" ""}}"
 
 # Maximum connections a database will establish
 database-max-connections: 5
