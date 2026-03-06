@@ -401,4 +401,4 @@ database:
 
   sqlite:
     # Relative paths resolve under the plugin data folder.
-    file: "community.db" # SQLite file name or absolute path
+    file: "{{getenv "COMMUNITY_DB" "community.db"}}" # SQLite file name or absolute path
