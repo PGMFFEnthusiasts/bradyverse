@@ -15,8 +15,14 @@ general:
   # The specific key ID used for fetching the server ID from the Environment API.
   environment-server-id: "server-id"
 
-  # Store link used to advertise in specfic messages
+  # Store link used to advertise in specific messages
   store-link: "https://oc.tc/store"
+
+  # Where Mojang account details are fetched from
+  mojang-api: "https://api.ashcon.app/mojang/v2/user/"
+
+  # Where random usernames are fetched from (Nicknames)
+  randomname-api: "https://api.gamertag.dev/random"
 
 # Ranks
 ranks:
@@ -147,8 +153,7 @@ users:
   # first-join:
   #   - "!send &a&lWelcome to the server!"
   #   - "give %name% cake"
-  first-join:
-    - "!send &aWelcome to Tom Brady!"
+  first-join: []
 
 # Nicknames - Able to adjust username of player to hide from unwanted eyes (todo wow change this message)
 nick:
@@ -177,6 +182,7 @@ chat:
 
 # Custom Info Commands
 commands:
+  enabled: false
   # Example of /rules command
   rules: # The command name is defined as the config section
     permission: "community.rules" # You can define any permission node, or use "" for no permission
@@ -213,6 +219,27 @@ broadcast:
     messages: # Messages sent in order (color codes allowed)
       - "&3This is an alert, you can adjust the messages inside of &aconfig.yml"
       - "&a&lYou can use &b&lcolor &4&lcodes &6&ltoo!"
+
+# Command Audit - Broadcast staff actions to admin chat
+command-audit:
+  enabled: true
+  audit-permissions: # Only audit commands from players with one of these permissions
+    - "community.staff"
+  exempt-permissions: # Skip auditing when a player has any of these permissions
+    - "community.command-audit.exempt"
+  click-teleport: true # Allow clicking the alert to teleport to the command location
+  include-prefixes: # Prefixes to always audit (matches the start of the full command)
+    - "//"
+    - "/worldedit:"
+    - "/minecraft:"
+  include-permissions: # Command permission nodes that include any of these strings will be audited
+    - "worldedit"
+  include-commands: # Commands to audit (matches the start of the full command)
+    - "/summon"
+    - "/enchant"
+  exclude-commands: # Commands to ignore (matches the start of the full command)
+    - "/sudo"
+    - "/community:sudo"
 
 # Freeze - Freeze players via command or observer hotbar tool (when PGM is enabled)
 freeze:
@@ -367,15 +394,12 @@ network:
 #      message: false
 
 database:
-  enabled: false # True for MySQL, false for SQLite
+  # Backend options: "sql" uses the Database plugin, "sqlite" stores data locally.
+  # If you use "sql", install and configure the Database plugin. Link: https://github.com/OvercastCommunity/Database
+  # "name" maps to the database id defined by the Database plugin config.
+  backend: "sqlite" # Options: sql (default), sqlite
+  name: "primary" # Optional named database from Database plugin
 
-  # SQLite settings (used if enabled is false)
-  sqlite-file: "community.sql"
-
-  # MySQL settings (used if enabled is true)
-  username: "username"
-  password: "password"
-  databaseName: "minecraft"
-  host: "localhost:3306" # host and port
-  timezone: "America/Los_Angeles" # Database timezone
-  max-connections: 2 # Maximum simultaneous connections (does not impact SQLite)
+  sqlite:
+    # Relative paths resolve under the plugin data folder.
+    file: "community.db" # SQLite file name or absolute path
