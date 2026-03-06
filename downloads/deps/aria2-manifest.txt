@@ -1,23 +1,23 @@
-# Aria2 manifest generated on Tue Feb 24 05:41:55 AM UTC 2026
+# Aria2 manifest generated on Fri Mar  6 02:00:13 UTC 2026
 
 https://tombrady.fireballs.me/cdn/deps/bot.jar
   checksum=sha-256=8b5dce7efda00d64bfcaf26f4ab4d1e4f4c5fffc57e2bd6d09f964f0e23faa1c
   out=bot.jar
 
 https://tombrady.fireballs.me/cdn/deps/broxy.jar
-  checksum=sha-256=41c5ebd3f18442450b6097c47c43c59d8dc7df74e8b6678b6eaaadbe065b8a00
+  checksum=sha-256=487b86768b376c0722266570c65b71de0002bcf5345ca609f753297604098d9c
   out=broxy.jar
 
 https://tombrady.fireballs.me/cdn/deps/core.jar
-  checksum=sha-256=375e9933402b99dd3e719bbd8ad840fb51e4ef2483da90bc37cc68d637182c23
+  checksum=sha-256=dffe7752d300f41fd81ed3df4dc81d12d9aa43503aaf60b5a47f4d77fc7a129b
   out=core.jar
 
 https://tombrady.fireballs.me/cdn/deps/core-pgm.jar
-  checksum=sha-256=fe9a57a3fc1d4e9511fb12fec5d7c98d34c2da556cafe96df0ad18e1436757bb
+  checksum=sha-256=6a51c30bb876ee9093b0ad1e3f833bf2ff90bae45ddfddf683e2cc7dc8aa9512
   out=core-pgm.jar
 
 https://tombrady.fireballs.me/cdn/deps/cps.jar
-  checksum=sha-256=5a4c3941139aa872fe26f256cca150d30b02518e7ee9ab46aff8886de5c73672
+  checksum=sha-256=76d44a66bd15ea320518efba89b4c465d235ed0655a99f003e5edf2f251ac4b1
   out=cps.jar
 
 https://tombrady.fireballs.me/cdn/deps/deps.jar
@@ -25,11 +25,11 @@ https://tombrady.fireballs.me/cdn/deps/deps.jar
   out=deps.jar
 
 https://tombrady.fireballs.me/cdn/deps/PGM.jar
-  checksum=sha-256=dbec24fb6f2953c56c1ea09f6d8534f70333c6dea13db268383cb8cf89567591
+  checksum=sha-256=6d413681e86cfcd835e4adafc77a6b741a6d14836f048b24695b9a3a97a74fa2
   out=PGM.jar
 
 https://tombrady.fireballs.me/cdn/deps/share.jar
-  checksum=sha-256=560741ed25600945fd3916afa570457672cee083d3f77a1082265b058c10bc1f
+  checksum=sha-256=2059b2032904c89b247d426d4c290330b7f793bed13793e231c2cc47fae41045
   out=share.jar
 
 https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
@@ -37,6 +37,6 @@ https://tombrady.fireballs.me/cdn/deps/sportpaper-1.8.8.jar
   out=sportpaper-1.8.8.jar
 
 https://tombrady.fireballs.me/cdn/deps/tools.jar
-  checksum=sha-256=e0de3a3ae269c1667abedc53dc21b76c91a2bffddc6c8c58889d6168583e47c7
+  checksum=sha-256=42d03b55f14f59b5ea5855a5186c763df19dc510fcb3920253b5b21d65116a0f
   out=tools.jar
 
