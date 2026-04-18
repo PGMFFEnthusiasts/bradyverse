@@ -69,10 +69,23 @@ cp -rT skeletons/private/ out/backend/ 2>/dev/null
 mv out/backend/plugins/sportpaper-1.8.8.jar out/backend/
 cp -rT downloads/maps/out/ out/backend/
 
-if [[ "$PUSH_BACKEND_IMAGE_TAG" != "" ]]; then
-  docker buildx build out/backend -f out/backend/Containerfile -t "${PUSH_BACKEND_IMAGE_TAG,,}" --platform "linux/amd64,linux/arm64" --push
+CACHE_ARGS=()
+if [[ -n "${GITHUB_ACTIONS:-}" ]]; then
+  CACHE_ARGS+=(--cache-from "type=gha,scope=backend")
+  CACHE_ARGS+=(--cache-to "type=gha,mode=max,scope=backend")
+fi
+
+if [[ -n "$PUSH_BACKEND_IMAGE_TAG" ]]; then
+  docker buildx build out/backend -f out/backend/Containerfile \
+    -t "${PUSH_BACKEND_IMAGE_TAG,,}" \
+    --platform "linux/amd64,linux/arm64" \
+    "${CACHE_ARGS[@]}" \
+    --push
 else
-  docker buildx build out/backend -f out/backend/Containerfile -t bradyverse-backend:latest --load
+  docker buildx build out/backend -f out/backend/Containerfile \
+    -t bradyverse-backend:latest \
+    "${CACHE_ARGS[@]}" \
+    --load
 fi
 
 TIME_END=$(date +%s)

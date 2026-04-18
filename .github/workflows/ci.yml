@@ -27,5 +27,6 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: crazy-max/ghaction-github-runtime@v4
       - run: |
           ./build.sh
