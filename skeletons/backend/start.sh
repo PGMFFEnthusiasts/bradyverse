@@ -20,7 +20,6 @@ fi
 # shoutout https://exa.y2k.diy/garden/jvm-args/ and mbt for linking me ts
 java -Xms${BRADY_INIT_HEAP_SPACE} -Xmx${BRADY_INIT_HEAP_SPACE} ${BRADY_ENABLE_NMT_FLAG} \
   -XX:+UseZGC -XX:+UseCompactObjectHeaders \
-  -XX:+DisableExplicitGC \
   -Dfile.encoding=UTF-8 \
   -Dcom.mojang.eula.agree=${MOJANG_EULA_AGREEMENT} \
   --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED \
