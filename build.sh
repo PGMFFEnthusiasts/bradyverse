@@ -21,7 +21,7 @@ fi
 function download_by_manifest() {
   GROUP=$1
 
-  curl -Lso "downloads/$GROUP/aria2-manifest.txt" "https://tombrady.fireballs.me/cdn/$GROUP/aria2-manifest.txt"
+  curl -Lso "downloads/$GROUP/aria2-manifest.txt" "https://fireballs.me/cdn/$GROUP/aria2-manifest.txt"
 
   CURRENT_HASH=$(sha256sum "downloads/$GROUP/aria2-manifest.txt" | cut -d' ' -f1)
   OLD_HASH=$(cat "downloads/$GROUP/.downloaded" 2>/dev/null)
